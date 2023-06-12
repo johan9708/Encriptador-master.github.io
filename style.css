@@ -1,0 +1,137 @@
+*{
+   background-color: #F3F5FC; 
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+}
+
+.mensaje{
+    width: 500px;
+    height: 400px;
+    margin: 80px 10px 5px 140px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px 10px 15px;
+    font-size: 24px;
+    color: #0A3871;
+}
+.alerta{
+    width: 500px;
+    margin: 10px 10px 10px 140px;
+}
+
+.botones{
+    margin: 10px 20px 10px 140px;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.btn-encriptar{
+    height: 50px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+
+.btn-encriptar:hover{
+    background-color: #528bd1;
+    font-size: 24px;
+}
+
+.btn-desencriptar{
+    height: 50px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border-radius: 24px;
+    background-color: rgb(172, 208, 238);
+    color: #0A3871;
+}
+
+.btn-desencriptar:hover{
+    background-color: rgb(46, 133, 204);
+    font-size: 24px;
+}
+
+.lado-izquierdo{
+    float: left;
+    width: 60%;
+    height: 750px;
+    background-color: #F3F5FC; 
+}
+
+.lado-derecho{
+    float: right;
+    width: 40%;
+    height: 750px;
+    background-color: #F3F5FC;
+    text-align: center;
+}
+
+.contenedor{
+    background-color: white;
+    width: 350px;
+    height: 630px;
+    position: relative;
+    margin: 25px 10px 10px 1px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 20px 10px gray;
+}
+
+.munheco{
+    margin: 120px 10px 1px 10px;
+    width: 55%;
+    background-color: white;
+}
+
+.texto-inicial{
+    margin: 1px 10px 10px 10px;
+    background-color: white;
+}
+.copiar{
+    background-color: white;
+    height: 180px;
+    width: 330px;
+    margin: 10px 10px 10px 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+    
+}
+
+.btn-copiar{
+    margin-top: 126px;
+    width: 30%;
+    height: 50px;
+    flex-basis: 100px;
+    flex-grow: 1;
+    border-radius: 24px;
+    border-color: #0A3871;
+    display: none;
+}
+
+.btn-copiar:hover{
+    background-color:#528bd1;
+    font-size: 24px;
+}
+
+.respuesta{
+    margin: 30px 10px 0px 10px;
+    width: 300px;
+    height: 370px;
+    border-radius: 24px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    display: none;
+}

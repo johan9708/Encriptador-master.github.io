@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/logo.png">
+    </header>
+    <main>
+        <section class="lado-izquierdo">
+            <textarea class="mensaje" id="texto1" oninput="this.value = this.value.replace(/[^a-z0-9]/,'')"
+             placeholder="Ingrese el texto aqui"></textarea>
+            <div class="alerta">
+                <p>&#8857; Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <input class="btn-encriptar" type="button" 
+                onclick="encriptar()"
+                value="Encriptar">
+                <input class="btn-desencriptar" type="button" 
+                onclick="desencriptar()"
+                value="Desencriptar">
+            </div>
+        </section>
+        <section class="lado-derecho">
+            <div class="contenedor">
+                <textarea id="texto2" class="respuesta" type="text" value=""></textarea> 
+                <img id="imagen" class="munheco" src="Imagenes/Munheco.png" alt="Muñeco con lupa">
+                <div id="inicial" class="texto-incial">
+                    <p><strong>Ningún mensaje fue </strong><br> <strong>encontrado</strong>
+                    <br>Ingrese el texto que desees encriptar o <br>desencriptar</p>
+                </div> 
+                <div class="copiar">
+                    <input id="copiar" class="btn-copiar" onclick="copiar()"type="button" value="Copiar">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
